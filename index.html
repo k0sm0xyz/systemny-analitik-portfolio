@@ -1,76 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Портфолио аналитика</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k0sm0xyz — Археолог данных</title>
     <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            background: #f9f9f9;
+            background:#0a0a0a; color:#00ff41; font-family:"Courier New",monospace;
+            padding:16px; min-height:100vh; display:flex; align-items:center; justify-content:center;
+            text-shadow:0 0 5px #00ff41;
         }
-        h1 {
-            color: #E74C3C;
-            border-bottom: 4px solid #F1C40F;
-            padding-bottom: 10px;
+        .terminal {
+            border:1px solid #00ff41; padding:20px; background:#0d0d0d;
+            border-radius:12px; box-shadow:0 0 30px #00ff4133;
+            max-width:700px; width:100%; word-wrap:break-word; overflow-wrap:break-word;
         }
-        .green { color: #2ECC71; font-weight: bold; }
-        .yellow { color: #F1C40F; font-weight: bold; }
-        .red { color: #E74C3C; font-weight: bold; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 12px 0; }
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 6px 12px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        a.green-link { color: #2ECC71; border: 2px solid #2ECC71; }
-        a.green-link:hover { background: #2ECC71; color: white; }
-        a.yellow-link { color: #F1C40F; border: 2px solid #F1C40F; }
-        a.yellow-link:hover { background: #F1C40F; color: white; }
-        a.red-link { color: #E74C3C; border: 2px solid #E74C3C; }
-        a.red-link:hover { background: #E74C3C; color: white; }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #F1C40F;
-            font-size: 14px;
-            color: #888;
-        }
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: white;
-            margin-right: 8px;
-        }
-        .badge-green { background: #2ECC71; }
-        .badge-yellow { background: #F1C40F; color: #333; }
-        .badge-red { background: #E74C3C; }
+        h1 { font-size:1.6rem; text-shadow:0 0 20px #00ff41,0 0 40px #00ff41; color:#00ff41; }
+        h2 { font-size:1.1rem; color:#00ff41; text-shadow:0 0 10px #00ff41; }
+        .prompt { color:#00ff41; }
+        .matrix { font-size:11px; white-space:pre; overflow-x:auto; line-height:1.2; }
+        hr { border:1px solid #00ff41; box-shadow:0 0 10px #00ff41; margin:16px 0; }
+        ul { list-style:none; padding:0; }
+        li { margin:6px 0; }
+        a { color:#00ff41; text-decoration:none; border-bottom:1px dashed #00ff41; }
+        a:hover { background:#00ff41; color:#0a0a0a; }
+        .glow { text-shadow:0 0 20px #00ff41,0 0 40px #00ff41; }
+        .footer { margin-top:20px; opacity:0.6; font-size:0.9rem; }
+        .route { line-height:1.8; }
     </style>
 </head>
 <body>
-    <h1>🔴🟡🟢 Портфолио аналитика</h1>
-    <p>Привет! Я учусь на системного аналитика и собираю свои проекты.</p>
-
-    <ul>
-        <li><a class="green-link" href="dashboard.md">📋 Дашборд доступности</a> <span class="badge badge-green">ONLINE</span></li>
-        <li><a class="yellow-link" href="tests.md">✅ Результаты тестов</a> <span class="badge badge-yellow">В процессе</span></li>
-        <li><a class="red-link" href="README.md">📖 О проекте</a> <span class="badge badge-red">Обновлено</span></li>
-        <li><a class="green-link" href="exports/">📦 Экспортированные данные</a></li>
-    </ul>
-
-    <p>🔗 <a href="https://github.com/k0sm0xyz/sistemny-analitik-portfolio">GitHub</a></p>
-
-    <div class="footer">
-        🔴🟡🟢 Автоматически обновляется через GitHub Actions &bull; 25.06.2026
+<div class="terminal">
+    <pre class="matrix">
+██╗  ██╗ ██████╗ ███████╗███╗   ███╗██████╗ ██╗  ██╗██╗   ██╗███████╗
+██║ ██╔╝██╔═══██╗██╔════╝████╗ ████║██╔══██╗╚██╗██╔╝╚██╗ ██╔╝╚══███╔╝
+█████╔╝ ██║   ██║███████╗██╔████╔██║██████╔╝ ╚███╔╝  ╚████╔╝  ███╔╝
+██╔═██╗ ██║   ██║╚════██║██║╚██╔╝██║██╔══██╗ ██╔██╗   ╚██╔╝  ███╔╝
+██║  ██╗╚██████╔╝███████║██║ ╚═╝ ██║██████╔╝██╔╝ ██╗   ██║   ███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
+    </pre>
+    <h1 class="glow">🔺 ACCESS GRANTED</h1>
+    <h2>SYSTEM ANALYST // DATA ARCHAEOLOGIST</h2>
+    <p><span class="prompt">[TRACE]</span> ██████  ACTIVE</p>
+    <p><span class="prompt">[PROFILE]</span> k0sm0xyz</p>
+    <p><span class="prompt">[STATUS]</span> ONLINE</p>
+    <p><span class="prompt">[NODE]</span> TERMINAL v2.0</p>
+    <hr>
+    <p><span class="prompt">></span> «Данные — это фрагменты древних свитков. Аналитик — тот, кто умеет их расшифровать.»</p>
+    <hr>
+    <p><span class="prompt">></span> <strong>МАРШРУТ</strong></p>
+    <div class="route">
+        <p>📡 СБОР ДАННЫХ → 🗺️ РАЗВЕДКА → 🔍 ОЧИСТКА</p>
+        <p>↓</p>
+        <p>🧠 АНАЛИЗ → 📊 ДАШБОРД → 🚀 ИНСАЙТ</p>
     </div>
+    <hr>
+    <p><span class="prompt">></span> <strong>КЛЮЧИ ДОСТУПА</strong></p>
+    <ul>
+        <li>📂 <a href="cases.md">КЕЙСЫ (9)</a></li>
+        <li>🗺️ <a href="https://k0sm0xyz.github.io/systemny-analitik-portfolio/">ПОРТФОЛИО</a></li>
+    </ul>
+    <hr>
+    <p><span class="prompt">></span> <strong>СВЯЗЬ</strong></p>
+    <ul>
+        <li>💬 <a href="https://t.me/k0sm0xyz">TELEGRAM</a></li>
+        <li>🐙 <a href="https://github.com/k0sm0xyz">GITHUB</a></li>
+        <li>📧 giopt097@gmail.com</li>
+    </ul>
+    <hr>
+    <p><span class="prompt">></span> <em>«Порядок там, где есть анализ. Анализ там, где есть система. Система там, где есть я.»</em></p>
+    <hr>
+    <p><span class="prompt">[SYSTEM]</span> ████████████████████ 100%</p>
+    <p><span class="prompt">[READY]</span> k0sm0xyz ONLINE</p>
+    <p><span class="prompt">[ACCESS]</span> GRANTED</p>
+    <div class="footer">𓋴𓃥𓂀 &nbsp; 29.06.2026</div>
+</div>
 </body>
 </html>
