@@ -67,8 +67,8 @@
 
 ## 🔗 Полезные ссылки
 
-- [Сайт портфолио](https://k0sm0xyz.github.io/sistemny-analitik-portfolio/)
-- [Репозиторий](https://github.com/k0sm0xyz/sistemny-analitik-portfolio)
+- [Сайт портфолио](https://k0sm0.github.io/sistemny-analitik-portfolio/)
+- [Репозиторий](https://github.com/k0sm0/sistemny-analitik-portfolio)
 - [Подсказки преподавателей](teachers-tips.md)
 - [DBeaver GitHub](https://github.com/dbeaver/dbeaver)
 
